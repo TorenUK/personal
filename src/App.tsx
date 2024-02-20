@@ -1,10 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
+import DopamineChart from './components/charts/Dopamine'
 
 function App() {
   return (
     <div className="App">
-      
+      <DopamineChart />
     </div>
   );
 }
