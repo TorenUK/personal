@@ -1,10 +1,13 @@
-import DopamineChart from './components/charts/Dopamine'
+import DopamineChart from "./components/charts/Dopamine";
+import { LocalStorageProvider } from "./context/localStorage";
 
 function App() {
   return (
-    <div className="App">
-      <DopamineChart />
-    </div>
+    <LocalStorageProvider>
+      <div className="App">
+        <DopamineChart />
+      </div>
+    </LocalStorageProvider>
   );
 }
 
