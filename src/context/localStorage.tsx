@@ -27,7 +27,7 @@ export const LocalStorageProvider: React.FC<LocalStorageProviderProps> = ({
 }) => {
   // retrieve data from local storage on initial render
   const storedData: LocalStorageData = JSON.parse(
-    localStorage.getItem("appData") || '{"name": ""'
+    localStorage.getItem("appData") || '{"name": ""}'
   );
   const [data, setData] = useState<LocalStorageData>(storedData);
 
